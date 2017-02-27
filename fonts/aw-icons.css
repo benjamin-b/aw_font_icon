@@ -1,0 +1,158 @@
+@font-face {
+	font-family: "aw-icons";
+	src: url('aw-icons.eot');
+	src: url('aw-icons.eot?#iefix') format('eot'),
+		url('aw-icons.woff2') format('woff2'),
+		url('aw-icons.woff') format('woff'),
+		url('aw-icons.ttf') format('truetype'),
+		url('aw-icons.svg#aw-icons') format('svg');
+}
+
+.aw-icon:before {
+	font-family: "aw-icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.aw-icon-activity-aw-chatted-with:before {
+	content: "\E001";
+}
+
+.aw-icon-activity-aw-image:before {
+	content: "\E002";
+}
+
+.aw-icon-activity-aw-selfie:before {
+	content: "\E003";
+}
+
+.aw-icon-activity-aw-video-call-with:before {
+	content: "\E004";
+}
+
+.aw-icon-activity-aw-with:before {
+	content: "\E005";
+}
+
+.aw-icon-meeting:before {
+	content: "\E006";
+}
+
+.aw-icon-mentioned-person:before {
+	content: "\E007";
+}
+
+.aw-icon-profile-follow:before {
+	content: "\E008";
+}
+
+.aw-icon-shared-file-to-person:before {
+	content: "\E009";
+}
+
+.aw-icon-close:before {
+	content: "\E00A";
+}
+
+.aw-icon-remove-image:before {
+	content: "\E00B";
+}
+
+.aw-icon-selfie-cam-loading:before {
+	content: "\E00C";
+}
+
+.aw-icon-clock:before {
+	content: "\E00D";
+}
+
+.aw-icon-sidebar-call-active:before {
+	content: "\E00E";
+}
+
+.aw-icon-sidebar-notification-center:before {
+	content: "\E00F";
+}
+
+.aw-icon-sidebar-notifications:before {
+	content: "\E010";
+}
+
+.aw-icon-sidebar-video-call:before {
+	content: "\E011";
+}
+
+.aw-icon-add:before {
+	content: "\E012";
+}
+
+.aw-icon-attachment-small:before {
+	content: "\E013";
+}
+
+.aw-icon-direct-message:before {
+	content: "\E014";
+}
+
+.aw-icon-feeds:before {
+	content: "\E015";
+}
+
+.aw-icon-filter:before {
+	content: "\E016";
+}
+
+.aw-icon-follow:before {
+	content: "\E017";
+}
+
+.aw-icon-following-hover:before {
+	content: "\E018";
+}
+
+.aw-icon-notification:before {
+	content: "\E019";
+}
+
+.aw-icon-profile-video-call:before {
+	content: "\E01A";
+}
+
+.aw-icon-view:before {
+	content: "\E01B";
+}
+
+.aw-icon-emoji:before {
+	content: "\E01C";
+}
+
+.aw-icon-start-chat:before {
+	content: "\E01D";
+}
+
+.aw-icon-leave:before {
+	content: "\E01E";
+}
+
+.aw-icon-notifications:before {
+	content: "\E01F";
+}
+
+.aw-icon-text:before {
+	content: "\E020";
+}
+
+.aw-icon-mobile:before {
+	content: "\E021";
+}
+
+.aw-icon-template.html:before {
+	content: "\E022";
+}

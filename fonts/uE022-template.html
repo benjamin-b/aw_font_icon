@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="aw-icons.css">
+<style type="text/css">
+.aw-icon-binary {
+    font-family: "aw-icons";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.my-class-name:before{
+	content: "\E001";
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    float: left;
+    text-align: center;
+}
+ul li:hover{
+    background: #ddd;
+}
+
+#icon-list li{
+	padding: 10px;
+}
+.icon-show-type{
+	clear: both;
+}
+.icon-show-type li span{
+	display: block;
+	padding: 10px;
+}
+.icon-show-type input{
+	display: none;
+}
+.icon-show-type input:checked ~ span{
+	background: #ddd;
+}
+
+i{
+	display: block;
+}
+
+#icon-demo i{
+	float: left;
+    padding-left: 10px;
+}
+.class-name li, .hex li, .binary li{
+	display: none;
+}
+.class-name .class-name-demo{
+	display: block;
+}
+.hex .hex-demo{
+	display: block;
+}
+.binary .binary-demo{
+	display: block;
+}
+
+.binary .binary-demo pre{
+	display: inline;
+}
+
+.clearfix:after { 
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden 
+}
+
+</style>
+</head>
+<body>
+
+<ul class="icon-show-type clearfix">
+	<li>
+		<label onclick="showIconType(0)">
+			<input type="radio" name="icon-type">
+			<span>className</span>
+		</label>
+	</li>
+	<li>
+		<label onclick="showIconType(1)">
+			<input type="radio" name="icon-type">
+			<span>hex</span>
+		</label>
+	</li>
+	<li>
+		<label onclick="showIconType(2)">
+			<input type="radio" name="icon-type">
+			<span>binary</span>
+		</label>
+	</li>
+</ul>
+<hr/>
+Demo
+<div id="icon-demo" class="class-name clearfix">
+	<li class="class-name-demo">
+		<i class="aw-icon aw-icon-activity-aw-chatted-with"></i>
+		<pre>
+			&lt;i class="aw-icon aw-icon-activity-aw-chatted-with"&gt;&lt;/i&gt;
+		</pre>
+	</li>
+	<li class="hex-demo">
+		<i class="aw-icon my-class-name"></i>
+		<pre>
+		    &lt;style&gt;
+			    .my-class-name:before{
+				    content: "\E001";
+				}
+			&lt;/style&gt;
+
+			&lt;i class="aw-icon my-class-name"&gt;&lt;/i&gt;
+		</pre>
+	</li>
+	<li class="binary-demo">
+		<i class="aw-icon-binary">&#57345;</i>
+		<pre>
+		    &lt;style&gt;
+				.aw-icon-binary {
+				    font-family: "aw-icons";
+				    -webkit-font-smoothing: antialiased;
+				    -moz-osx-font-smoothing: grayscale;
+				    font-style: normal;
+				    font-variant: normal;
+				    font-weight: normal;
+				    text-decoration: none;
+				    text-transform: none;
+				}
+			&lt;/style&gt;
+			&lt;i class="aw-icon-binary"&gt; &amp;#57345;&lt;/i&gt; 
+		</pre>
+	</li>
+</div>
+<hr/>
+<ul id="icon-list" class="class-name">
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-activity-aw-chatted-with"></i>
+    <pre>aw-icon-activity-aw-chatted-with</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-activity-aw-chatted-with"></i>
+    <pre>\E001</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57345;</i>
+    <pre>&amp;#57345;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-activity-aw-image"></i>
+    <pre>aw-icon-activity-aw-image</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-activity-aw-image"></i>
+    <pre>\E002</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57346;</i>
+    <pre>&amp;#57346;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-activity-aw-selfie"></i>
+    <pre>aw-icon-activity-aw-selfie</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-activity-aw-selfie"></i>
+    <pre>\E003</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57347;</i>
+    <pre>&amp;#57347;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-activity-aw-video-call-with"></i>
+    <pre>aw-icon-activity-aw-video-call-with</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-activity-aw-video-call-with"></i>
+    <pre>\E004</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57348;</i>
+    <pre>&amp;#57348;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-activity-aw-with"></i>
+    <pre>aw-icon-activity-aw-with</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-activity-aw-with"></i>
+    <pre>\E005</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57349;</i>
+    <pre>&amp;#57349;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-meeting"></i>
+    <pre>aw-icon-meeting</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-meeting"></i>
+    <pre>\E006</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57350;</i>
+    <pre>&amp;#57350;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-mentioned-person"></i>
+    <pre>aw-icon-mentioned-person</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-mentioned-person"></i>
+    <pre>\E007</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57351;</i>
+    <pre>&amp;#57351;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-profile-follow"></i>
+    <pre>aw-icon-profile-follow</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-profile-follow"></i>
+    <pre>\E008</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57352;</i>
+    <pre>&amp;#57352;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-shared-file-to-person"></i>
+    <pre>aw-icon-shared-file-to-person</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-shared-file-to-person"></i>
+    <pre>\E009</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57353;</i>
+    <pre>&amp;#57353;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-close"></i>
+    <pre>aw-icon-close</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-close"></i>
+    <pre>\E00A</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57354;</i>
+    <pre>&amp;#57354;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-remove-image"></i>
+    <pre>aw-icon-remove-image</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-remove-image"></i>
+    <pre>\E00B</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57355;</i>
+    <pre>&amp;#57355;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-selfie-cam-loading"></i>
+    <pre>aw-icon-selfie-cam-loading</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-selfie-cam-loading"></i>
+    <pre>\E00C</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57356;</i>
+    <pre>&amp;#57356;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-clock"></i>
+    <pre>aw-icon-clock</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-clock"></i>
+    <pre>\E00D</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57357;</i>
+    <pre>&amp;#57357;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-sidebar-call-active"></i>
+    <pre>aw-icon-sidebar-call-active</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-sidebar-call-active"></i>
+    <pre>\E00E</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57358;</i>
+    <pre>&amp;#57358;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-sidebar-notification-center"></i>
+    <pre>aw-icon-sidebar-notification-center</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-sidebar-notification-center"></i>
+    <pre>\E00F</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57359;</i>
+    <pre>&amp;#57359;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-sidebar-notifications"></i>
+    <pre>aw-icon-sidebar-notifications</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-sidebar-notifications"></i>
+    <pre>\E010</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57360;</i>
+    <pre>&amp;#57360;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-sidebar-video-call"></i>
+    <pre>aw-icon-sidebar-video-call</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-sidebar-video-call"></i>
+    <pre>\E011</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57361;</i>
+    <pre>&amp;#57361;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-add"></i>
+    <pre>aw-icon-add</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-add"></i>
+    <pre>\E012</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57362;</i>
+    <pre>&amp;#57362;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-attachment-small"></i>
+    <pre>aw-icon-attachment-small</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-attachment-small"></i>
+    <pre>\E013</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57363;</i>
+    <pre>&amp;#57363;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-direct-message"></i>
+    <pre>aw-icon-direct-message</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-direct-message"></i>
+    <pre>\E014</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57364;</i>
+    <pre>&amp;#57364;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-feeds"></i>
+    <pre>aw-icon-feeds</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-feeds"></i>
+    <pre>\E015</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57365;</i>
+    <pre>&amp;#57365;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-filter"></i>
+    <pre>aw-icon-filter</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-filter"></i>
+    <pre>\E016</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57366;</i>
+    <pre>&amp;#57366;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-follow"></i>
+    <pre>aw-icon-follow</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-follow"></i>
+    <pre>\E017</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57367;</i>
+    <pre>&amp;#57367;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-following-hover"></i>
+    <pre>aw-icon-following-hover</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-following-hover"></i>
+    <pre>\E018</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57368;</i>
+    <pre>&amp;#57368;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-notification"></i>
+    <pre>aw-icon-notification</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-notification"></i>
+    <pre>\E019</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57369;</i>
+    <pre>&amp;#57369;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-profile-video-call"></i>
+    <pre>aw-icon-profile-video-call</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-profile-video-call"></i>
+    <pre>\E01A</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57370;</i>
+    <pre>&amp;#57370;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-view"></i>
+    <pre>aw-icon-view</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-view"></i>
+    <pre>\E01B</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57371;</i>
+    <pre>&amp;#57371;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-emoji"></i>
+    <pre>aw-icon-emoji</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-emoji"></i>
+    <pre>\E01C</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57372;</i>
+    <pre>&amp;#57372;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-start-chat"></i>
+    <pre>aw-icon-start-chat</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-start-chat"></i>
+    <pre>\E01D</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57373;</i>
+    <pre>&amp;#57373;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-leave"></i>
+    <pre>aw-icon-leave</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-leave"></i>
+    <pre>\E01E</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57374;</i>
+    <pre>&amp;#57374;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-notifications"></i>
+    <pre>aw-icon-notifications</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-notifications"></i>
+    <pre>\E01F</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57375;</i>
+    <pre>&amp;#57375;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-text"></i>
+    <pre>aw-icon-text</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-text"></i>
+    <pre>\E020</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57376;</i>
+    <pre>&amp;#57376;</pre>
+</li>
+
+<li class="class-name-demo">
+    <i class="aw-icon aw-icon-mobile"></i>
+    <pre>aw-icon-mobile</pre>
+</li>
+<li class="hex-demo">
+    <i class="aw-icon aw-icon-mobile"></i>
+    <pre>\E021</pre>
+</li>
+<li class="binary-demo">
+    <i class="aw-icon-binary">&#57377;</i>
+    <pre>&amp;#57377;</pre>
+</li>
+
+</ul>
+
+<script type="text/javascript">
+	function showIconType(type){
+		var classMap = {
+			0: 'class-name',
+			1: 'hex',
+			2: 'binary',
+		};
+
+		document.getElementById('icon-list').className = classMap[type];
+		document.getElementById('icon-demo').className = classMap[type] + ' clearfix';
+
+	}
+</script>
+</body>
+</html>
